@@ -1,358 +1,711 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kaynel Agency - profesjonalna agencja cyfrowa specjalizująca się w tworzeniu stron internetowych, reklamach online, optymalizacji Google Maps i aplikacjach mobilnych.">
-    <meta name="keywords" content="agencja cyfrowa, strony internetowe, reklamy online, Google Maps, aplikacje mobilne, Polska">
-    <title>Kaynel Agency - Twoja Agencja Cyfrowa</title>
-    
-    <!-- Bootstrap 5.3 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Google Fonts - Poppins -->
+    <meta charset="utf-8">
+    <title>Kaynel - Agencja Marketingu Cyfrowego</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="strony internetowe, marketing online, SEO, ASO, Google Ads" name="keywords">
+    <meta content="Kaynel - profesjonalna agencja marketingu cyfrowego specjalizująca się w tworzeniu stron internetowych, marketingu online, SEO i ASO." name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/main.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
-  <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
-    <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="index.html">
-            <img src="img/kaynel-logo.png" alt="Kaynel Agency Logo" height="40" class="me-2">
-            <span style="color: #2979FF;" class="fw-bold">Kaynel</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Strona główna</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="o-nas.html">O nas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="uslugi.html">Usługi</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="blog.html">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="kontakt.html">Kontakt</a>
-                </li>
-            </ul>
-        </div>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
     </div>
-</nav>
+    <!-- Spinner End -->
 
 
-
-
-
-    <!-- Hero Section -->
-<section class="hero-section d-flex align-items-center">
-    <div class="hero-background"></div>
-    <div class="container position-relative">
-        <div class="row">
-            <div class="col-lg-7">
-                <div class="hero-content text-white p-4 rounded">
-                    <h1 class="display-4 fw-bold mb-4">Twoja Agencja Cyfrowa</h1>
-                    <p class="lead mb-5">Tworzymy strony internetowe, reklamy i aplikacje mobilne, które rozwijają Twój biznes.</p>
-                    <a href="uslugi.html" class="btn btn-light btn-lg">Zacznij teraz</a>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-primary text-white d-none d-lg-flex">
+        <div class="container py-3">
+            <div class="d-flex align-items-center">
+                <a href="index.html">
+                    <h2 class="text-white fw-bold m-0">Kaynel</h2>
+                </a>
+                <div class="ms-auto d-flex align-items-center">
+                    <small class="ms-4"><i class="fa fa-map-marker-alt me-3"></i>ul. Suwak 15, 02-676 Warszawa, Polska</small>
+                    <small class="ms-4"><i class="fa fa-envelope me-3"></i>info@kaynel.pl</small>
+                    <small class="ms-4"><i class="fa fa-phone-alt me-3"></i>+48 888 962 765</small>
+                    <div class="ms-3 d-flex">
+                        <a class="btn btn-sm-square btn-light text-primary rounded-circle ms-2" href="https://www.facebook.com/kaynelagency"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-sm-square btn-light text-primary rounded-circle ms-2" href="https://www.instagram.com/kaynelagency/"><i
+                                class="fab fa-instagram"></i></a>
+                        <a class="btn btn-sm-square btn-light text-primary rounded-circle ms-2" href="https://www.linkedin.com/company/kaynelagency/"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</section>
+    <!-- Topbar End -->
 
-    <!-- Services Section -->
-    <section class="services-section py-5">
+
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-white sticky-top">
         <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="section-title">Nasze Usługi</h2>
-                <p class="section-subtitle">Kompleksowe rozwiązania dla Twojego biznesu</p>
+            <nav class="navbar navbar-expand-lg bg-white navbar-light p-lg-0">
+                <a href="index.html" class="navbar-brand d-lg-none">
+                    <h1 class="fw-bold m-0">Kaynel</h1>
+                </a>
+                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a href="index.html" class="nav-item nav-link active">Strona główna</a>
+                        <a href="about.html" class="nav-item nav-link">O nas</a>
+                        <a href="service.html" class="nav-item nav-link">Usługi</a>
+                        <a href="project.html" class="nav-item nav-link">Projekty</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Więcej</a>
+                            <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
+                                <a href="feature.html" class="dropdown-item">Nasze atuty</a>
+                                <a href="team.html" class="dropdown-item">Nasz zespół</a>
+                                <a href="testimonial.html" class="dropdown-item">Opinie klientów</a>
+                                <a href="quote.html" class="dropdown-item">Wycena</a>
+                                <a href="404.html" class="dropdown-item">404</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Kontakt</a>
+                    </div>
+                    <div class="ms-auto d-none d-lg-block">
+                        <a href="" class="btn btn-primary rounded-pill py-2 px-3">Darmowa wycena</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+       <!-- Carousel Start -->
+       <div class="container-fluid px-0 mb-5">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-lg-7 text-start">
+                                    <p class="fs-4 text-white animated slideInRight">Witaj w
+                                        <strong>Kaynel</strong>
+                                    </p>
+                                    <h1 class="display-1 text-white mb-4 animated slideInRight">Odblokuj potencjał swojego biznesu</h1>
+                                    <a href=""
+                                        class="btn btn-primary rounded-pill py-3 px-5 animated slideInRight">Dowiedz się więcej</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-end">
+                                <div class="col-lg-7 text-end">
+                                    <p class="fs-4 text-white animated slideInLeft">Witaj w <strong>Kaynel</strong>
+                                    </p>
+                                    <h1 class="display-1 text-white mb-5 animated slideInLeft">Gotowi na rozwój Twojego biznesu</h1>
+                                    <a href=""
+                                        class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Dowiedz się więcej</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card service-card h-100">
-                        <div class="card-body text-center">
-                            <div class="service-icon mb-4">
-                                <i class="bi bi-laptop"></i>
-                            </div>
-                            <h3 class="card-title">Tworzenie Stron</h3>
-                            <p class="card-text">Projektujemy i tworzymy nowoczesne, responsywne strony internetowe, które przyciągają klientów.</p>
-                            <a href="uslugi.html" class="btn btn-outline-primary">Dowiedz się więcej</a>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Poprzedni</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Następny</span>
+            </button>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- Features Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-0 feature-row">
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="feature-item border h-100 p-5">
+                        <div class="btn-square bg-light rounded-circle mb-4" style="width: 64px; height: 64px;">
+                            <img class="img-fluid" src="img/icon/icon-1.png" alt="Icon">
                         </div>
+                        <h5 class="mb-3">Nagradzane rozwiązania</h5>
+                        <p class="mb-0">Oferujemy rozwiązania, które przynoszą realne wyniki i uznanie w branży</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card service-card h-100">
-                        <div class="card-body text-center">
-                            <div class="service-icon mb-4">
-                                <i class="bi bi-graph-up"></i>
-                            </div>
-                            <h3 class="card-title">Reklamy Online</h3>
-                            <p class="card-text">Skuteczne kampanie reklamowe, które zwiększają rozpoznawalność marki i generują sprzedaż.</p>
-                            <a href="uslugi.html" class="btn btn-outline-primary">Dowiedz się więcej</a>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="feature-item border h-100 p-5">
+                        <div class="btn-square bg-light rounded-circle mb-4" style="width: 64px; height: 64px;">
+                            <img class="img-fluid" src="img/icon/icon-2.png" alt="Icon">
                         </div>
+                        <h5 class="mb-3">Profesjonalny zespół</h5>
+                        <p class="mb-0">Nasz zespół ekspertów zapewnia najwyższą jakość usług marketingowych</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card service-card h-100">
-                        <div class="card-body text-center">
-                            <div class="service-icon mb-4">
-                                <i class="bi bi-geo-alt"></i>
-                            </div>
-                            <h3 class="card-title">Optymalizacja Google Maps</h3>
-                            <p class="card-text">Zwiększamy widoczność Twojej firmy w Google Maps, aby klienci mogli Cię łatwo znaleźć.</p>
-                            <a href="uslugi.html" class="btn btn-outline-primary">Dowiedz się więcej</a>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="feature-item border h-100 p-5">
+                        <div class="btn-square bg-light rounded-circle mb-4" style="width: 64px; height: 64px;">
+                            <img class="img-fluid" src="img/icon/icon-3.png" alt="Icon">
                         </div>
+                        <h5 class="mb-3">Uczciwe ceny</h5>
+                        <p class="mb-0">Oferujemy konkurencyjne ceny dopasowane do potrzeb i możliwości klientów</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+                    <div class="feature-item border h-100 p-5">
+                        <div class="btn-square bg-light rounded-circle mb-4" style="width: 64px; height: 64px;">
+                            <img class="img-fluid" src="img/icon/icon-4.png" alt="Icon">
+                        </div>
+                        <h5 class="mb-3">Wsparcie 24/7</h5>
+                        <p class="mb-0">Zapewniamy ciągłe wsparcie i pomoc techniczną dla naszych klientów</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+    <!-- Features End -->
 
-    <!-- About Us Preview Section -->
-    <section class="about-preview-section py-5 bg-light">
+
+    <!-- About Start -->
+    <div class="container-xxl about my-5">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <img src="img/about-us.png" alt="Kaynel Agency Team" class="img-fluid rounded">
-                </div>
+            <div class="row g-0">
                 <div class="col-lg-6">
-                    <h2 class="section-title mb-4">Poznaj Nas</h2>
-                    <p class="lead mb-4">Kaynel Agency to ekspert w tworzeniu stron internetowych, reklam online, optymalizacji Google Maps i aplikacji mobilnych.</p>
-                    <p class="mb-4">Naszą misją jest dostarczanie kompleksowych rozwiązań cyfrowych, które pomagają firmom rozwijać się w internecie.</p>
-                    <a href="o-nas.html" class="btn btn-outline-primary">Dowiedz się więcej o nas</a>
+                    <div class="h-100 d-flex align-items-center justify-content-center" style="min-height: 300px;">
+                        <button type="button" class="btn-play" data-bs-toggle="modal"
+                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6 pt-lg-5 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="bg-white rounded-top p-5 mt-lg-5">
+                        <p class="fs-5 fw-medium text-primary">O nas</p>
+                        <h1 class="display-6 mb-4">Najlepsza agencja marketingowa dla rozwoju Twojego biznesu</h1>
+                        <p class="mb-4">Kaynel to profesjonalna agencja marketingowa, która pomaga firmom zwiększyć ich obecność online poprzez tworzenie stron internetowych, prowadzenie kampanii reklamowych oraz optymalizację pod kątem wyszukiwarek.</p>
+                        <div class="row g-5 pt-2 mb-5">
+                            <div class="col-sm-6">
+                                <img class="img-fluid mb-4" src="img/icon/icon-5.png" alt="">
+                                <h5 class="mb-3">Kompleksowe usługi</h5>
+                                <span>Od tworzenia stron po kampanie reklamowe - wszystko w jednym miejscu</span>
+                            </div>
+                            <div class="col-sm-6">
+                                <img class="img-fluid mb-4" src="img/icon/icon-2.png" alt="">
+                                <h5 class="mb-3">Dedykowani eksperci</h5>
+                                <span>Nasz zespół specjalistów zadba o każdy aspekt Twojego marketingu</span>
+                            </div>
+                        </div>
+                        <a class="btn btn-primary rounded-pill py-3 px-5" href="">Dowiedz się więcej</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+    <!-- About End -->
 
-    <!-- Portfolio Showcase Section -->
-    <section class="portfolio-showcase-section py-5">
+
+    <!-- Video Modal Start -->
+    <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Film z YouTube</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 16:9 aspect ratio -->
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen
+                            allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
         <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="section-title">Nasze Realizacje</h2>
-                <p class="section-subtitle">Wybrane projekty, które zrealizowaliśmy</p>
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="fs-5 fw-medium text-primary">Nasze usługi</p>
+                <h1 class="display-5 mb-5">Usługi marketingu cyfrowego, które oferujemy</h1>
             </div>
             <div class="row g-4">
-                <!-- Project 1 -->
-                <div class="col-md-4">
-                    <div class="card portfolio-card h-100">
-                        <img src="img/project1.png" class="card-img-top" alt="Projekt strony internetowej">
-                        <div class="card-body">
-                            <h3 class="card-title">Restauracja Smakosz</h3>
-                            <p class="portfolio-category">Strona internetowa</p>
-                            <p class="card-text">Nowoczesna, responsywna strona internetowa dla restauracji, z menu online i systemem rezerwacji.</p>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item position-relative h-100">
+                        <div class="service-text rounded p-5">
+                            <div class="btn-square bg-light rounded-circle mx-auto mb-4"
+                                style="width: 64px; height: 64px;">
+                                <img class="img-fluid" src="img/icon/icon-5.png" alt="Icon">
+                            </div>
+                            <h5 class="mb-3">Strony internetowe</h4>
+                                <p class="mb-0">Tworzymy profesjonalne landing page, które przyciągają uwagę i generują konwersje</p>
+                        </div>
+                        <div class="service-btn rounded-0 rounded-bottom">
+                            <a class="text-primary fw-medium" href="">Czytaj więcej<i
+                                    class="bi bi-chevron-double-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Project 2 -->
-                <div class="col-md-4">
-                    <div class="card portfolio-card h-100">
-                        <img src="img/project2.png" class="card-img-top" alt="Kampania reklamowa">
-                        <div class="card-body">
-                            <h3 class="card-title">Sklep Modny</h3>
-                            <p class="portfolio-category">Kampania reklamowa</p>
-                            <p class="card-text">Kompleksowa kampania reklamowa online dla sklepu odzieżowego, która zwiększyła sprzedaż o 45%.</p>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item position-relative h-100">
+                        <div class="service-text rounded p-5">
+                            <div class="btn-square bg-light rounded-circle mx-auto mb-4"
+                                style="width: 64px; height: 64px;">
+                                <img class="img-fluid" src="img/icon/icon-6.png" alt="Icon">
+                            </div>
+                            <h5 class="mb-3">Meta Ads</h4>
+                                <p class="mb-0">Skuteczne kampanie reklamowe na Facebooku i Instagramie, które docierają do Twojej grupy docelowej</p>
+                        </div>
+                        <div class="service-btn rounded-0 rounded-bottom">
+                            <a class="text-primary fw-medium" href="">Czytaj więcej<i
+                                    class="bi bi-chevron-double-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Project 3 -->
-                <div class="col-md-4">
-                    <div class="card portfolio-card h-100">
-                        <img src="img/project3.png" class="card-img-top" alt="Aplikacja mobilna">
-                        <div class="card-body">
-                            <h3 class="card-title">Fitness Tracker</h3>
-                            <p class="portfolio-category">Aplikacja mobilna</p>
-                            <p class="card-text">Intuicyjna aplikacja mobilna do śledzenia treningów i diety, z personalizowanymi planami.</p>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item position-relative h-100">
+                        <div class="service-text rounded p-5">
+                            <div class="btn-square bg-light rounded-circle mx-auto mb-4"
+                                style="width: 64px; height: 64px;">
+                                <img class="img-fluid" src="img/icon/icon-7.png" alt="Icon">
+                            </div>
+                            <h5 class="mb-3">Google Ads</h4>
+                                <p class="mb-0">Kampanie reklamowe w Google, które zwiększają widoczność i przyciągają potencjalnych klientów</p>
+                        </div>
+                        <div class="service-btn rounded-0 rounded-bottom">
+                            <a class="text-primary fw-medium" href="">Czytaj więcej<i
+                                    class="bi bi-chevron-double-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="text-center mt-5">
-                <a href="portfolio.html" class="btn btn-primary">Zobacz więcej projektów</a>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item position-relative h-100">
+                        <div class="service-text rounded p-5">
+                            <div class="btn-square bg-light rounded-circle mx-auto mb-4"
+                                style="width: 64px; height: 64px;">
+                                <img class="img-fluid" src="img/icon/icon-8.png" alt="Icon">
+                            </div>
+                            <h5 class="mb-3">TikTok Ads</h4>
+                                <p class="mb-0">Kreatywne kampanie reklamowe na TikToku, które angażują młodszą grupę odbiorców</p>
+                        </div>
+                        <div class="service-btn rounded-0 rounded-bottom">
+                            <a class="text-primary fw-medium" href="">Czytaj więcej<i
+                                    class="bi bi-chevron-double-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item position-relative h-100">
+                        <div class="service-text rounded p-5">
+                            <div class="btn-square bg-light rounded-circle mx-auto mb-4"
+                                style="width: 64px; height: 64px;">
+                                <img class="img-fluid" src="img/icon/icon-9.png" alt="Icon">
+                            </div>
+                            <h5 class="mb-3">SEO i ASO</h4>
+                                <p class="mb-0">Optymalizacja stron internetowych i aplikacji mobilnych, aby osiągnęły wyższe pozycje w wynikach wyszukiwania</p>
+                            </div>
+                            <div class="service-btn rounded-0 rounded-bottom">
+                                <a class="text-primary fw-medium" href="">Czytaj więcej<i
+                                        class="bi bi-chevron-double-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item position-relative h-100">
+                            <div class="service-text rounded p-5">
+                                <div class="btn-square bg-light rounded-circle mx-auto mb-4"
+                                    style="width: 64px; height: 64px;">
+                                    <img class="img-fluid" src="img/icon/icon-10.png" alt="Icon">
+                                </div>
+                                <h5 class="mb-3">Google Maps Reviews</h4>
+                                    <p class="mb-0">Pomagamy w zdobywaniu pozytywnych opinii w Google Maps, które budują zaufanie do Twojej firmy</p>
+                            </div>
+                            <div class="service-btn rounded-0 rounded-bottom">
+                                <a class="text-primary fw-medium" href="">Czytaj więcej<i
+                                        class="bi bi-chevron-double-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+        <!-- Service End -->
+    
+    
+        <!-- Project Start -->
+        <div class="container-xxl pt-5">
+            <div class="container">
+                <div class="text-center text-md-start pb-5 pb-md-0 wow fadeInUp" data-wow-delay="0.1s"
+                    style="max-width: 500px;">
+                    <p class="fs-5 fw-medium text-primary">Nasze projekty</p>
+                    <h1 class="display-5 mb-5">Zrealizowaliśmy wiele wspaniałych projektów</h1>
+                </div>
+                <div class="owl-carousel project-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="project-item mb-5">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/project-1.jpg" alt="">
+                            <div class="project-overlay">
+                                <a class="btn btn-lg-square btn-light rounded-circle m-1" href="img/project-1.jpg"
+                                    data-lightbox="project"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square btn-light rounded-circle m-1" href=""><i
+                                        class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <a class="d-block h5" href="">Analityka danych i insighty</a>
+                            <span>Kompleksowa analiza danych dla firmy z branży e-commerce, która zwiększyła konwersję o 35%</span>
+                        </div>
+                    </div>
+                    <div class="project-item mb-5">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/project-2.jpg" alt="">
+                            <div class="project-overlay">
+                                <a class="btn btn-lg-square btn-light rounded-circle m-1" href="img/project-2.jpg"
+                                    data-lightbox="project"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square btn-light rounded-circle m-1" href=""><i
+                                        class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <a class="d-block h5" href="">Strategia marketingu treści</a>
+                            <span>Opracowanie kompleksowej strategii treści dla startupu technologicznego, która zwiększyła ruch organiczny o 150%</span>
+                        </div>
+                    </div>
+                    <div class="project-item mb-5">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/project-3.jpg" alt="">
+                            <div class="project-overlay">
+                                <a class="btn btn-lg-square btn-light rounded-circle m-1" href="img/project-3.jpg"
+                                    data-lightbox="project"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square btn-light rounded-circle m-1" href=""><i
+                                        class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <a class="d-block h5" href="">Rynek docelowy biznesu</a>
+                            <span>Analiza i identyfikacja rynku docelowego dla firmy z branży fitness, co pozwoliło na precyzyjne targetowanie kampanii</span>
+                        </div>
+                    </div>
+                    <div class="project-item mb-5">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/project-4.jpg" alt="">
+                            <div class="project-overlay">
+                                <a class="btn btn-lg-square btn-light rounded-circle m-1" href="img/project-4.jpg"
+                                    data-lightbox="project"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square btn-light rounded-circle m-1" href=""><i
+                                        class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <a class="d-block h5" href="">Strategia marketingu w mediach społecznościowych</a>
+                            <span>Kompleksowa strategia social media dla marki modowej, która zwiększyła zaangażowanie o 200%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Project End -->
+    
+    
+        <!-- Quote Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <p class="fs-5 fw-medium text-primary">Wycena</p>
+                        <h1 class="display-5 mb-4">Potrzebujesz pomocy ekspertów? Jesteśmy tutaj!</h1>
+                        <p>Kaynel to zespół doświadczonych specjalistów w dziedzinie marketingu cyfrowego. Pomagamy firmom zwiększyć ich obecność online, przyciągnąć nowych klientów i zwiększyć sprzedaż.</p>
+                        <p class="mb-4">Niezależnie od wielkości Twojej firmy, mamy rozwiązania dopasowane do Twoich potrzeb i budżetu. Skontaktuj się z nami, aby omówić, jak możemy pomóc Twojemu biznesowi.</p>
+                        <a class="d-inline-flex align-items-center rounded overflow-hidden border border-primary" href="">
+                            <span class="btn-lg-square bg-primary" style="width: 55px; height: 55px;">
+                                <i class="fa fa-phone-alt text-white"></i>
+                            </span>
+                            <span class="fs-5 fw-medium mx-4">+48 888 962 765</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <h2 class="mb-4">Otrzymaj darmową wycenę</h2>
+                        <div class="row g-3">
+                            <div class="col-sm-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="name" placeholder="Twoje imię">
+                                    <label for="name">Twoje imię</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="mail" placeholder="Twój email">
+                                    <label for="mail">Twój email</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="mobile" placeholder="Twój telefon">
+                                    <label for="mobile">Twój telefon</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-floating">
+                                    <select class="form-select" id="service">
+                                        <option selected>Strony internetowe</option>
+                                        <option value="">Meta Ads</option>
+                                        <option value="">Google Ads</option>
+                                        <option value="">TikTok Ads</option>
+                                        <option value="">SEO i ASO</option>
+                                        <option value="">Google Maps Reviews</option>
+                                    </select>
+                                    <label for="service">Wybierz usługę</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Zostaw wiadomość" id="message"
+                                        style="height: 130px"></textarea>
+                                    <label for="message">Wiadomość</label>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button class="btn btn-primary w-100 py-3" type="submit">Wyślij zapytanie</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Quote Start -->
+    
+    
+        <!-- Team Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                    <p class="fs-5 fw-medium text-primary">Nasz zespół</p>
+                    <h1 class="display-5 mb-5">Nasi eksperci gotowi do pomocy</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item rounded overflow-hidden pb-4">
+                            <img class="img-fluid mb-4" src="img/team-1.jpg" alt="">
+                            <h5>Aleksander Kowalski</h5>
+                            <span class="text-primary">Założyciel i CEO</span>
+                            <ul class="team-social">
+                                <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
+                                <li><a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a></li>
+                                <li><a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item rounded overflow-hidden pb-4">
+                            <img class="img-fluid mb-4" src="img/team-2.jpg" alt="">
+                            <h5>Adam Nowak</h5>
+                            <span class="text-primary">Współzałożyciel</span>
+                            <ul class="team-social">
+                                <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
+                                <li><a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a></li>
+                                <li><a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item rounded overflow-hidden pb-4">
+                            <img class="img-fluid mb-4" src="img/team-3.jpg" alt="">
+                            <h5>Bartosz Wiśniewski</h5>
+                            <span class="text-primary">Dyrektor zarządzający</span>
+                            <ul class="team-social">
+                                <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
+                                <li><a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a></li>
+                                <li><a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="team-item rounded overflow-hidden pb-4">
+                            <img class="img-fluid mb-4" src="img/team-4.jpg" alt="">
+                            <h5>Robert Jankowski</h5>
+                            <span class="text-primary">Specjalista ds. marketingu cyfrowego</span>
+                            <ul class="team-social">
+                                <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
+                                <li><a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a></li>
+                                <li><a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+           <!-- Team End -->
 
-    <!-- Testimonials Section -->
-    <section class="testimonials-section py-5 bg-light">
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl pt-5">
         <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="section-title">Co mówią nasi klienci</h2>
-                <p class="section-subtitle">Opinie od zadowolonych klientów</p>
+            <div class="text-center text-md-start pb-5 pb-md-0 wow fadeInUp" data-wow-delay="0.1s"
+                style="max-width: 500px;">
+                <p class="fs-5 fw-medium text-primary">Opinie klientów</p>
+                <h1 class="display-5 mb-5">Co klienci mówią o naszych usługach!</h1>
             </div>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card testimonial-card h-100">
-                        <div class="card-body">
-                            <div class="testimonial-rating mb-3">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                            </div>
-                            <p class="card-text mb-4">"Kaynel Agency stworzyło dla nas wspaniałą stronę internetową, która znacznie zwiększyła liczbę rezerwacji. Profesjonalna obsługa i świetne efekty!"</p>
-                            <div class="testimonial-author">
-                                <h4 class="mb-0">Marek Nowak</h4>
-                                <p class="mb-0">Restauracja Smakosz</p>
-                            </div>
-                        </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
+                    <img class="mb-4" src="img/testimonial-1.jpg" alt="">
+                    <p class="mb-4">Współpraca z Kaynel to czysta przyjemność. Profesjonalne podejście, terminowość i efekty, które przerosły nasze oczekiwania. Polecam każdemu, kto chce rozwinąć swój biznes online.</p>
+                    <h5>Marek Lewandowski</h5>
+                    <span class="text-primary">Właściciel firmy budowlanej</span>
+                </div>
+                <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
+                    <img class="mb-4" src="img/testimonial-2.jpg" alt="">
+                    <p class="mb-4">Dzięki kampaniom Google Ads przygotowanym przez Kaynel, nasza sprzedaż wzrosła o 40% w ciągu trzech miesięcy. Świetna komunikacja i pełen profesjonalizm.</p>
+                    <h5>Anna Kowalczyk</h5>
+                    <span class="text-primary">Dyrektor marketingu</span>
+                </div>
+                <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
+                    <img class="mb-4" src="img/testimonial-3.jpg" alt="">
+                    <p class="mb-4">Kaynel pomógł nam zoptymalizować naszą aplikację mobilną, co znacząco zwiększyło liczbę pobrań. Ich wiedza w zakresie ASO jest imponująca. Z pewnością będziemy kontynuować współpracę.</p>
+                    <h5>Tomasz Zieliński</h5>
+                    <span class="text-primary">CEO startupu technologicznego</span>
+                </div>
+                <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
+                    <img class="mb-4" src="img/testimonial-4.jpg" alt="">
+                    <p class="mb-4">Nasza firma potrzebowała odświeżenia wizerunku online. Kaynel stworzył dla nas nowoczesną stronę internetową i przeprowadził skuteczną kampanię w mediach społecznościowych. Rezultaty są fantastyczne!</p>
+                    <h5>Katarzyna Nowakowska</h5>
+                    <span class="text-primary">Właścicielka butiku</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Nasze biuro</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>ul. Suwak 15, 02-676 Warszawa, Polska</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+48 888 962 765</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@kaynel.pl</p>
+                    <div class="d-flex pt-3">
+                        <a class="btn btn-square btn-light rounded-circle me-2" href="https://www.facebook.com/kaynelagency"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-light rounded-circle me-2" href="https://www.instagram.com/kaynelagency/"><i
+                                class="fab fa-instagram"></i></a>
+                        <a class="btn btn-square btn-light rounded-circle me-2" href="https://www.linkedin.com/company/kaynelagency/"><i
+                                class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card testimonial-card h-100">
-                        <div class="card-body">
-                            <div class="testimonial-rating mb-3">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                            </div>
-                            <p class="card-text mb-4">"Kampania reklamowa przygotowana przez Kaynel Agency przyniosła nam świetne rezultaty. Profesjonalizm i zaangażowanie na najwyższym poziomie."</p>
-                            <div class="testimonial-author">
-                                <h4 class="mb-0">Anna Kowalska</h4>
-                                <p class="mb-0">Sklep Modny</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Szybkie linki</h4>
+                    <a class="btn btn-link" href="">O nas</a>
+                    <a class="btn btn-link" href="">Kontakt</a>
+                    <a class="btn btn-link" href="">Nasze usługi</a>
+                    <a class="btn btn-link" href="">Warunki i zasady</a>
+                    <a class="btn btn-link" href="">Wsparcie</a>
                 </div>
-                <div class="col-md-4">
-                    <div class="card testimonial-card h-100">
-                        <div class="card-body">
-                            <div class="testimonial-rating mb-3">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                            </div>
-                            <p class="card-text mb-4">"Aplikacja mobilna stworzona przez Kaynel Agency spełniła wszystkie nasze oczekiwania. Użytkownicy chwalą jej intuicyjność i funkcjonalność."</p>
-                            <div class="testimonial-author">
-                                <h4 class="mb-0">Piotr Zieliński</h4>
-                                <p class="mb-0">Fitness Club</p>
-                            </div>
-                        </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Godziny pracy</h4>
+                    <p class="mb-1">Poniedziałek - Piątek</p>
+                    <h6 class="text-light">09:00 - 17:00</h6>
+                    <p class="mb-1">Sobota</p>
+                    <h6 class="text-light">09:00 - 12:00</h6>
+                    <p class="mb-1">Niedziela</p>
+                    <h6 class="text-light">Zamknięte</h6>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Newsletter</h4>
+                    <p>Zapisz się do naszego newslettera, aby otrzymywać najnowsze informacje i porady marketingowe.</p>
+                    <div class="position-relative w-100">
+                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text"
+                            placeholder="Twój email">
+                        <button type="button"
+                            class="btn btn-light py-2 position-absolute top-0 end-0 mt-2 me-2">Zapisz się</button>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+    <!-- Footer End -->
 
-    <!-- Blog Preview Section -->
-    <section class="blog-preview-section py-5">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="section-title">Nasz Blog</h2>
-                <p class="section-subtitle">Najnowsze artykuły i porady</p>
-            </div>
-            <div class="row g-4">
-                <!-- Article 1 -->
-                <div class="col-md-6">
-                    <div class="card blog-card h-100">
-                        <img src="img/blog-1.png" class="card-img-top" alt="Jak poprawić widoczność w Google Maps">
-                        <div class="card-body">
-                            <div class="blog-meta mb-3">
-                                <span class="blog-date"><i class="bi bi-calendar me-2"></i>15 maja 2025</span>
-                                <span class="blog-author ms-3"><i class="bi bi-person me-2"></i>Jan Kowalski</span>
-                            </div>
-                            <h3 class="card-title">Jak poprawić widoczność w Google Maps</h3>
-                            <p class="card-text">Google Maps to jedno z najważniejszych narzędzi dla lokalnych firm. Odpowiednia optymalizacja wizytówki Google Moja Firma może znacząco zwiększyć liczbę klientów.</p>
-                            <a href="blog.html" class="btn btn-outline-primary">Czytaj więcej</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Article 2 -->
-                <div class="col-md-6">
-                    <div class="card blog-card h-100">
-                        <img src="img/blog-2.png" class="card-img-top" alt="Dlaczego opinie w Google Maps są ważne">
-                        <div class="card-body">
-                            <div class="blog-meta mb-3">
-                                <span class="blog-date"><i class="bi bi-calendar me-2"></i>2 czerwca 2025</span>
-                                <span class="blog-author ms-3"><i class="bi bi-person me-2"></i>Anna Nowak</span>
-                            </div>
-                            <h3 class="card-title">Dlaczego opinie w Google Maps są ważne</h3>
-                            <p class="card-text">Opinie klientów w Google Maps to jeden z najważniejszych elementów budowania wiarygodności Twojej firmy w internecie.</p>
-                            <a href="blog.html" class="btn btn-outline-primary">Czytaj więcej</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center mt-5">
-                <a href="blog.html" class="btn btn-primary">Zobacz wszystkie artykuły</a>
-            </div>
-        </div>
-    </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section py-5 bg-primary text-white">
-        <div class="container text-center">
-            <h2 class="section-title text-white mb-4">Gotowy na rozwój swojego biznesu?</h2>
-            <p class="section-subtitle text-white mb-4">Skontaktuj się z nami, aby omówić, jak możemy pomóc Twojej firmie osiągnąć sukces online.</p>
-            <a href="kontakt.html" class="btn btn-light btn-lg">Skontaktuj się z nami</a>
-        </div>
-    </section>
-
-    <!-- Newsletter Section -->
-    <section class="newsletter-section py-5 bg-light">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6 text-center">
-                    <h2 class="section-title mb-4">Zapisz się do newslettera</h2>
-                    <p class="section-subtitle mb-4">Otrzymuj najnowsze artykuły i porady bezpośrednio na swoją skrzynkę.</p>
-                    <form class="newsletter-form">
-                        <div class="input-group mb-3">
-                            <input type="email" class="form-control" placeholder="Twój adres email" required>
-                            <button class="btn btn-primary" type="submit">Zapisz się</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer bg-light py-4 mt-5">
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <p class="mb-0">© 2025 Kaynel Agency. Wszystkie prawa zastrzeżone.</p>
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="fw-medium text-light" href="#">Kaynel</a>, Wszelkie prawa zastrzeżone.
                 </div>
-                <div class="col-md-6 text-md-end">
-                    <ul class="list-inline mb-0">
-                        <li class="list-inline-item"><a href="https://www.facebook.com/kaynelagency" target="_blank">Facebook</a></li>
-                        <li class="list-inline-item"><a href="https://www.instagram.com/kaynelagency/" target="_blank">Instagram</a></li>
-                        <li class="list-inline-item"><a href="https://www.linkedin.com/company/kaynelagency/" target="_blank">LinkedIn</a></li>
-                    </ul>
+                <div class="col-md-6 text-center text-md-end">
+                    Zaprojektowane przez <a class="fw-medium text-light" href="https://kaynel.pl">Kaynel</a>
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
+    <!-- Copyright End -->
 
-    <!-- Bootstrap JS Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
-    
-    <!-- Custom JS -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
     <script src="js/main.js"></script>
 </body>
+
 </html>
